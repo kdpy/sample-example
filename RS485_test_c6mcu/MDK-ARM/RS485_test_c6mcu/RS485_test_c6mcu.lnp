@@ -1,0 +1,28 @@
+--cpu Cortex-M0
+"rs485_test_c6mcu\startup_stm32f030x6.o"
+"rs485_test_c6mcu\main.o"
+"rs485_test_c6mcu\stm32f0xx_it.o"
+"rs485_test_c6mcu\stm32f0xx_hal_msp.o"
+"rs485_test_c6mcu\serialcomm.o"
+"rs485_test_c6mcu\libmodbus.o"
+"rs485_test_c6mcu\stm32f0xx_hal_tim.o"
+"rs485_test_c6mcu\stm32f0xx_hal_tim_ex.o"
+"rs485_test_c6mcu\stm32f0xx_hal_uart.o"
+"rs485_test_c6mcu\stm32f0xx_hal_uart_ex.o"
+"rs485_test_c6mcu\stm32f0xx_hal_rcc.o"
+"rs485_test_c6mcu\stm32f0xx_hal_rcc_ex.o"
+"rs485_test_c6mcu\stm32f0xx_hal.o"
+"rs485_test_c6mcu\stm32f0xx_hal_i2c.o"
+"rs485_test_c6mcu\stm32f0xx_hal_i2c_ex.o"
+"rs485_test_c6mcu\stm32f0xx_hal_gpio.o"
+"rs485_test_c6mcu\stm32f0xx_hal_dma.o"
+"rs485_test_c6mcu\stm32f0xx_hal_cortex.o"
+"rs485_test_c6mcu\stm32f0xx_hal_pwr.o"
+"rs485_test_c6mcu\stm32f0xx_hal_pwr_ex.o"
+"rs485_test_c6mcu\stm32f0xx_hal_flash.o"
+"rs485_test_c6mcu\stm32f0xx_hal_flash_ex.o"
+"rs485_test_c6mcu\system_stm32f0xx.o"
+--library_type=microlib --strict --scatter "RS485_test_c6mcu\RS485_test_c6mcu.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "RS485_test_c6mcu.map" -o RS485_test_c6mcu\RS485_test_c6mcu.axf
